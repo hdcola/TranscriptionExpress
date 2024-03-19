@@ -100,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				67807E6C2BA932BA005570B6 /* TranscriptionExpressApp.swift */,
+				67807E752BA932BB005570B6 /* TranscriptionExpress.entitlements */,
 				67807E9D2BA93671005570B6 /* Views */,
 				67807E9E2BA93683005570B6 /* Resources */,
 				67807E722BA932BB005570B6 /* Preview Content */,
@@ -143,7 +144,6 @@
 		67807E9E2BA93683005570B6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				67807E752BA932BB005570B6 /* TranscriptionExpress.entitlements */,
 				67807E702BA932BB005570B6 /* Assets.xcassets */,
 			);
 			path = Resources;
