@@ -100,9 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				67807E6C2BA932BA005570B6 /* TranscriptionExpressApp.swift */,
-				67807E6E2BA932BA005570B6 /* ContentView.swift */,
-				67807E702BA932BB005570B6 /* Assets.xcassets */,
-				67807E752BA932BB005570B6 /* TranscriptionExpress.entitlements */,
+				67807E9D2BA93671005570B6 /* Views */,
+				67807E9E2BA93683005570B6 /* Resources */,
 				67807E722BA932BB005570B6 /* Preview Content */,
 			);
 			path = TranscriptionExpress;
@@ -131,6 +130,23 @@
 				67807E8A2BA932BB005570B6 /* TranscriptionExpressUITestsLaunchTests.swift */,
 			);
 			path = TranscriptionExpressUITests;
+			sourceTree = "<group>";
+		};
+		67807E9D2BA93671005570B6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				67807E6E2BA932BA005570B6 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		67807E9E2BA93683005570B6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				67807E752BA932BB005570B6 /* TranscriptionExpress.entitlements */,
+				67807E702BA932BB005570B6 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
