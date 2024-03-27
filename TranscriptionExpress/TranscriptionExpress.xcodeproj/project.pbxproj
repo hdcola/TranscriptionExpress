@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		676B94252BB3C26600B4144D /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 676B94242BB3C26600B4144D /* KeyboardShortcuts */; };
 		67807E6D2BA932BA005570B6 /* TranscriptionExpressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67807E6C2BA932BA005570B6 /* TranscriptionExpressApp.swift */; };
 		67807E6F2BA932BA005570B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67807E6E2BA932BA005570B6 /* ContentView.swift */; };
 		67807E712BA932BB005570B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67807E702BA932BB005570B6 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 			files = (
 				67807E9C2BA93436005570B6 /* WhisperKit in Frameworks */,
 				67807E992BA9337B005570B6 /* MarkdownUI in Frameworks */,
+				676B94252BB3C26600B4144D /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +170,7 @@
 			packageProductDependencies = (
 				67807E982BA9337B005570B6 /* MarkdownUI */,
 				67807E9B2BA93436005570B6 /* WhisperKit */,
+				676B94242BB3C26600B4144D /* KeyboardShortcuts */,
 			);
 			productName = TranscriptionExpress;
 			productReference = 67807E692BA932BA005570B6 /* TranscriptionExpress.app */;
@@ -244,6 +247,7 @@
 			packageReferences = (
 				67807E972BA9337B005570B6 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
 				67807E9A2BA93435005570B6 /* XCRemoteSwiftPackageReference "whisperkit" */,
+				676B94232BB3C26600B4144D /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
 			);
 			productRefGroup = 67807E6A2BA932BA005570B6 /* Products */;
 			projectDirPath = "";
@@ -613,6 +617,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		676B94232BB3C26600B4144D /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		67807E972BA9337B005570B6 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui.git";
@@ -632,6 +644,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		676B94242BB3C26600B4144D /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 676B94232BB3C26600B4144D /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
 		67807E982BA9337B005570B6 /* MarkdownUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 67807E972BA9337B005570B6 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;

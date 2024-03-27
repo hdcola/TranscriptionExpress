@@ -13,7 +13,7 @@ struct TranscriptionExpressApp: App {
         WindowGroup {
             ContentView()
             #if os(macOS)
-                .frame(minWidth: 1000,minHeight: 700)
+                .frame(minWidth: 1000, minHeight: 700)
             #endif
         }
     }
