@@ -13,7 +13,11 @@ import UIKit
 import AppKit
 #endif
 import AVFoundation
+import KeyboardShortcuts
 
+extension KeyboardShortcuts.Name{
+    static let toggleCopy = Self("toggleCopy")
+}
 
 struct ContentView: View {
     @State var whisperKit: WhisperKit? = nil
@@ -47,6 +51,7 @@ struct ContentView: View {
                 .navigationSplitViewColumnWidth(min: 200, ideal: 200)
         } detail: {
             Text("\(availableModels)")
+            KeyboardShortcuts.Recorder("Toggle Copy", name: .toggleCopy)
         }
         .onAppear {
             fetchModels()
