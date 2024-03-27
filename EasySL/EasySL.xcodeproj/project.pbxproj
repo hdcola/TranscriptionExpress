@@ -15,6 +15,8 @@
 		67F0A8512BB4413200EE9A48 /* EasySLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0A8502BB4413200EE9A48 /* EasySLUITests.swift */; };
 		67F0A8532BB4413200EE9A48 /* EasySLUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0A8522BB4413200EE9A48 /* EasySLUITestsLaunchTests.swift */; };
 		67F0A8612BB4415300EE9A48 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 67F0A8602BB4415300EE9A48 /* KeyboardShortcuts */; };
+		67F0A8662BB4420F00EE9A48 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0A8652BB4420F00EE9A48 /* AppState.swift */; };
+		67F0A8692BB44F1500EE9A48 /* OllamaKit in Frameworks */ = {isa = PBXBuildFile; productRef = 67F0A8682BB44F1500EE9A48 /* OllamaKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,7 @@
 		67F0A84C2BB4413200EE9A48 /* EasySLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasySLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F0A8502BB4413200EE9A48 /* EasySLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySLUITests.swift; sourceTree = "<group>"; };
 		67F0A8522BB4413200EE9A48 /* EasySLUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySLUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		67F0A8652BB4420F00EE9A48 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +57,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67F0A8612BB4415300EE9A48 /* KeyboardShortcuts in Frameworks */,
+				67F0A8692BB44F1500EE9A48 /* OllamaKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,9 +101,10 @@
 		67F0A8332BB4413200EE9A48 /* EasySL */ = {
 			isa = PBXGroup;
 			children = (
+				67F0A8642BB441F000EE9A48 /* Models */,
+				67F0A8632BB4418B00EE9A48 /* Views */,
+				67F0A8622BB4417B00EE9A48 /* Resources */,
 				67F0A8342BB4413200EE9A48 /* EasySLApp.swift */,
-				67F0A8362BB4413200EE9A48 /* ContentView.swift */,
-				67F0A8382BB4413200EE9A48 /* Assets.xcassets */,
 				67F0A83D2BB4413200EE9A48 /* EasySL.entitlements */,
 				67F0A83A2BB4413200EE9A48 /* Preview Content */,
 			);
@@ -131,6 +136,30 @@
 			path = EasySLUITests;
 			sourceTree = "<group>";
 		};
+		67F0A8622BB4417B00EE9A48 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				67F0A8382BB4413200EE9A48 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		67F0A8632BB4418B00EE9A48 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				67F0A8362BB4413200EE9A48 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		67F0A8642BB441F000EE9A48 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				67F0A8652BB4420F00EE9A48 /* AppState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +178,7 @@
 			name = EasySL;
 			packageProductDependencies = (
 				67F0A8602BB4415300EE9A48 /* KeyboardShortcuts */,
+				67F0A8682BB44F1500EE9A48 /* OllamaKit */,
 			);
 			productName = EasySL;
 			productReference = 67F0A8312BB4413200EE9A48 /* EasySL.app */;
@@ -224,6 +254,7 @@
 			mainGroup = 67F0A8282BB4413100EE9A48;
 			packageReferences = (
 				67F0A85F2BB4415300EE9A48 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+				67F0A8672BB44F1500EE9A48 /* XCRemoteSwiftPackageReference "OllamaKit" */,
 			);
 			productRefGroup = 67F0A8322BB4413200EE9A48 /* Products */;
 			projectDirPath = "";
@@ -267,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67F0A8662BB4420F00EE9A48 /* AppState.swift in Sources */,
 				67F0A8372BB4413200EE9A48 /* ContentView.swift in Sources */,
 				67F0A8352BB4413200EE9A48 /* EasySLApp.swift in Sources */,
 			);
@@ -599,6 +631,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		67F0A8672BB44F1500EE9A48 /* XCRemoteSwiftPackageReference "OllamaKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kevinhermawan/OllamaKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -606,6 +646,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 67F0A85F2BB4415300EE9A48 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
 			productName = KeyboardShortcuts;
+		};
+		67F0A8682BB44F1500EE9A48 /* OllamaKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67F0A8672BB44F1500EE9A48 /* XCRemoteSwiftPackageReference "OllamaKit" */;
+			productName = OllamaKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
