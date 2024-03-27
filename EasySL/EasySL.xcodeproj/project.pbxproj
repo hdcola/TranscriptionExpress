@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		67F0A8352BB4413200EE9A48 /* EasySLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0A8342BB4413200EE9A48 /* EasySLApp.swift */; };
+		67F0A8372BB4413200EE9A48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0A8362BB4413200EE9A48 /* ContentView.swift */; };
+		67F0A8392BB4413200EE9A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67F0A8382BB4413200EE9A48 /* Assets.xcassets */; };
+		67F0A83C2BB4413200EE9A48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67F0A83B2BB4413200EE9A48 /* Preview Assets.xcassets */; };
+		67F0A8472BB4413200EE9A48 /* EasySLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0A8462BB4413200EE9A48 /* EasySLTests.swift */; };
+		67F0A8512BB4413200EE9A48 /* EasySLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0A8502BB4413200EE9A48 /* EasySLUITests.swift */; };
+		67F0A8532BB4413200EE9A48 /* EasySLUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0A8522BB4413200EE9A48 /* EasySLUITestsLaunchTests.swift */; };
+		67F0A8612BB4415300EE9A48 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 67F0A8602BB4415300EE9A48 /* KeyboardShortcuts */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		67F0A8432BB4413200EE9A48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67F0A8292BB4413100EE9A48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67F0A8302BB4413200EE9A48;
+			remoteInfo = EasySL;
+		};
+		67F0A84D2BB4413200EE9A48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67F0A8292BB4413100EE9A48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67F0A8302BB4413200EE9A48;
+			remoteInfo = EasySL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		67F0A8312BB4413200EE9A48 /* EasySL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasySL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67F0A8342BB4413200EE9A48 /* EasySLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySLApp.swift; sourceTree = "<group>"; };
+		67F0A8362BB4413200EE9A48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		67F0A8382BB4413200EE9A48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67F0A83B2BB4413200EE9A48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		67F0A83D2BB4413200EE9A48 /* EasySL.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EasySL.entitlements; sourceTree = "<group>"; };
+		67F0A8422BB4413200EE9A48 /* EasySLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasySLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67F0A8462BB4413200EE9A48 /* EasySLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySLTests.swift; sourceTree = "<group>"; };
+		67F0A84C2BB4413200EE9A48 /* EasySLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasySLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67F0A8502BB4413200EE9A48 /* EasySLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySLUITests.swift; sourceTree = "<group>"; };
+		67F0A8522BB4413200EE9A48 /* EasySLUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySLUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67F0A82E2BB4413200EE9A48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67F0A8612BB4415300EE9A48 /* KeyboardShortcuts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67F0A83F2BB4413200EE9A48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67F0A8492BB4413200EE9A48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67F0A8282BB4413100EE9A48 = {
+			isa = PBXGroup;
+			children = (
+				67F0A8332BB4413200EE9A48 /* EasySL */,
+				67F0A8452BB4413200EE9A48 /* EasySLTests */,
+				67F0A84F2BB4413200EE9A48 /* EasySLUITests */,
+				67F0A8322BB4413200EE9A48 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		67F0A8322BB4413200EE9A48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67F0A8312BB4413200EE9A48 /* EasySL.app */,
+				67F0A8422BB4413200EE9A48 /* EasySLTests.xctest */,
+				67F0A84C2BB4413200EE9A48 /* EasySLUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67F0A8332BB4413200EE9A48 /* EasySL */ = {
+			isa = PBXGroup;
+			children = (
+				67F0A8342BB4413200EE9A48 /* EasySLApp.swift */,
+				67F0A8362BB4413200EE9A48 /* ContentView.swift */,
+				67F0A8382BB4413200EE9A48 /* Assets.xcassets */,
+				67F0A83D2BB4413200EE9A48 /* EasySL.entitlements */,
+				67F0A83A2BB4413200EE9A48 /* Preview Content */,
+			);
+			path = EasySL;
+			sourceTree = "<group>";
+		};
+		67F0A83A2BB4413200EE9A48 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				67F0A83B2BB4413200EE9A48 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		67F0A8452BB4413200EE9A48 /* EasySLTests */ = {
+			isa = PBXGroup;
+			children = (
+				67F0A8462BB4413200EE9A48 /* EasySLTests.swift */,
+			);
+			path = EasySLTests;
+			sourceTree = "<group>";
+		};
+		67F0A84F2BB4413200EE9A48 /* EasySLUITests */ = {
+			isa = PBXGroup;
+			children = (
+				67F0A8502BB4413200EE9A48 /* EasySLUITests.swift */,
+				67F0A8522BB4413200EE9A48 /* EasySLUITestsLaunchTests.swift */,
+			);
+			path = EasySLUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67F0A8302BB4413200EE9A48 /* EasySL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67F0A8562BB4413200EE9A48 /* Build configuration list for PBXNativeTarget "EasySL" */;
+			buildPhases = (
+				67F0A82D2BB4413200EE9A48 /* Sources */,
+				67F0A82E2BB4413200EE9A48 /* Frameworks */,
+				67F0A82F2BB4413200EE9A48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasySL;
+			packageProductDependencies = (
+				67F0A8602BB4415300EE9A48 /* KeyboardShortcuts */,
+			);
+			productName = EasySL;
+			productReference = 67F0A8312BB4413200EE9A48 /* EasySL.app */;
+			productType = "com.apple.product-type.application";
+		};
+		67F0A8412BB4413200EE9A48 /* EasySLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67F0A8592BB4413200EE9A48 /* Build configuration list for PBXNativeTarget "EasySLTests" */;
+			buildPhases = (
+				67F0A83E2BB4413200EE9A48 /* Sources */,
+				67F0A83F2BB4413200EE9A48 /* Frameworks */,
+				67F0A8402BB4413200EE9A48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67F0A8442BB4413200EE9A48 /* PBXTargetDependency */,
+			);
+			name = EasySLTests;
+			productName = EasySLTests;
+			productReference = 67F0A8422BB4413200EE9A48 /* EasySLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		67F0A84B2BB4413200EE9A48 /* EasySLUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67F0A85C2BB4413200EE9A48 /* Build configuration list for PBXNativeTarget "EasySLUITests" */;
+			buildPhases = (
+				67F0A8482BB4413200EE9A48 /* Sources */,
+				67F0A8492BB4413200EE9A48 /* Frameworks */,
+				67F0A84A2BB4413200EE9A48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67F0A84E2BB4413200EE9A48 /* PBXTargetDependency */,
+			);
+			name = EasySLUITests;
+			productName = EasySLUITests;
+			productReference = 67F0A84C2BB4413200EE9A48 /* EasySLUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		67F0A8292BB4413100EE9A48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					67F0A8302BB4413200EE9A48 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					67F0A8412BB4413200EE9A48 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 67F0A8302BB4413200EE9A48;
+					};
+					67F0A84B2BB4413200EE9A48 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 67F0A8302BB4413200EE9A48;
+					};
+				};
+			};
+			buildConfigurationList = 67F0A82C2BB4413100EE9A48 /* Build configuration list for PBXProject "EasySL" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 67F0A8282BB4413100EE9A48;
+			packageReferences = (
+				67F0A85F2BB4415300EE9A48 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+			);
+			productRefGroup = 67F0A8322BB4413200EE9A48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67F0A8302BB4413200EE9A48 /* EasySL */,
+				67F0A8412BB4413200EE9A48 /* EasySLTests */,
+				67F0A84B2BB4413200EE9A48 /* EasySLUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		67F0A82F2BB4413200EE9A48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67F0A83C2BB4413200EE9A48 /* Preview Assets.xcassets in Resources */,
+				67F0A8392BB4413200EE9A48 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67F0A8402BB4413200EE9A48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67F0A84A2BB4413200EE9A48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67F0A82D2BB4413200EE9A48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67F0A8372BB4413200EE9A48 /* ContentView.swift in Sources */,
+				67F0A8352BB4413200EE9A48 /* EasySLApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67F0A83E2BB4413200EE9A48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67F0A8472BB4413200EE9A48 /* EasySLTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67F0A8482BB4413200EE9A48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67F0A8512BB4413200EE9A48 /* EasySLUITests.swift in Sources */,
+				67F0A8532BB4413200EE9A48 /* EasySLUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67F0A8442BB4413200EE9A48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67F0A8302BB4413200EE9A48 /* EasySL */;
+			targetProxy = 67F0A8432BB4413200EE9A48 /* PBXContainerItemProxy */;
+		};
+		67F0A84E2BB4413200EE9A48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67F0A8302BB4413200EE9A48 /* EasySL */;
+			targetProxy = 67F0A84D2BB4413200EE9A48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		67F0A8542BB4413200EE9A48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		67F0A8552BB4413200EE9A48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		67F0A8572BB4413200EE9A48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EasySL/EasySL.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EasySL/Preview Content\"";
+				DEVELOPMENT_TEAM = T4W3MN6QHA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = one.hdcola.EasySL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		67F0A8582BB4413200EE9A48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EasySL/EasySL.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EasySL/Preview Content\"";
+				DEVELOPMENT_TEAM = T4W3MN6QHA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = one.hdcola.EasySL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		67F0A85A2BB4413200EE9A48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T4W3MN6QHA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = one.hdcola.EasySLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasySL.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EasySL";
+			};
+			name = Debug;
+		};
+		67F0A85B2BB4413200EE9A48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T4W3MN6QHA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = one.hdcola.EasySLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasySL.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EasySL";
+			};
+			name = Release;
+		};
+		67F0A85D2BB4413200EE9A48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T4W3MN6QHA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = one.hdcola.EasySLUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = EasySL;
+			};
+			name = Debug;
+		};
+		67F0A85E2BB4413200EE9A48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T4W3MN6QHA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = one.hdcola.EasySLUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = EasySL;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		67F0A82C2BB4413100EE9A48 /* Build configuration list for PBXProject "EasySL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67F0A8542BB4413200EE9A48 /* Debug */,
+				67F0A8552BB4413200EE9A48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67F0A8562BB4413200EE9A48 /* Build configuration list for PBXNativeTarget "EasySL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67F0A8572BB4413200EE9A48 /* Debug */,
+				67F0A8582BB4413200EE9A48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67F0A8592BB4413200EE9A48 /* Build configuration list for PBXNativeTarget "EasySLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67F0A85A2BB4413200EE9A48 /* Debug */,
+				67F0A85B2BB4413200EE9A48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67F0A85C2BB4413200EE9A48 /* Build configuration list for PBXNativeTarget "EasySLUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67F0A85D2BB4413200EE9A48 /* Debug */,
+				67F0A85E2BB4413200EE9A48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		67F0A85F2BB4415300EE9A48 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		67F0A8602BB4415300EE9A48 /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67F0A85F2BB4415300EE9A48 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 67F0A8292BB4413100EE9A48 /* Project object */;
+}
