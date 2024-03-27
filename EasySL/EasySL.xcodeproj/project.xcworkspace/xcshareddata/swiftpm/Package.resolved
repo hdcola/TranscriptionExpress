@@ -1,5 +1,5 @@
 {
-  "originHash" : "d7b76b4878317787f4c6b7e62289dcecb7527c166562de1325de2ffe77b9cc9e",
+  "originHash" : "35425b05194c50b8f3deda214901115b9e12e041ead00960d53e76567e075640",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -26,6 +26,15 @@
       "state" : {
         "revision" : "36a471194d6d1833103f9293adce2ed50db3def2",
         "version" : "3.0.2"
+      }
+    },
+    {
+      "identity" : "viewstate",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kevinhermawan/ViewState.git",
+      "state" : {
+        "revision" : "8e5a5efbbf3fb5a2d2621533a115a9da031214cb",
+        "version" : "1.2.1"
       }
     }
   ],

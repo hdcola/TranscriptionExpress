@@ -17,6 +17,8 @@
 		67F0A8612BB4415300EE9A48 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 67F0A8602BB4415300EE9A48 /* KeyboardShortcuts */; };
 		67F0A8662BB4420F00EE9A48 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0A8652BB4420F00EE9A48 /* AppState.swift */; };
 		67F0A8692BB44F1500EE9A48 /* OllamaKit in Frameworks */ = {isa = PBXBuildFile; productRef = 67F0A8682BB44F1500EE9A48 /* OllamaKit */; };
+		67F0A86C2BB48AE500EE9A48 /* ViewState in Frameworks */ = {isa = PBXBuildFile; productRef = 67F0A86B2BB48AE500EE9A48 /* ViewState */; };
+		67F0A86E2BB4955E00EE9A48 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0A86D2BB4955E00EE9A48 /* MessageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		67F0A8502BB4413200EE9A48 /* EasySLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySLUITests.swift; sourceTree = "<group>"; };
 		67F0A8522BB4413200EE9A48 /* EasySLUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySLUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		67F0A8652BB4420F00EE9A48 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		67F0A86D2BB4955E00EE9A48 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 			files = (
 				67F0A8612BB4415300EE9A48 /* KeyboardShortcuts in Frameworks */,
 				67F0A8692BB44F1500EE9A48 /* OllamaKit in Frameworks */,
+				67F0A86C2BB48AE500EE9A48 /* ViewState in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				67F0A8652BB4420F00EE9A48 /* AppState.swift */,
+				67F0A86D2BB4955E00EE9A48 /* MessageViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 			packageProductDependencies = (
 				67F0A8602BB4415300EE9A48 /* KeyboardShortcuts */,
 				67F0A8682BB44F1500EE9A48 /* OllamaKit */,
+				67F0A86B2BB48AE500EE9A48 /* ViewState */,
 			);
 			productName = EasySL;
 			productReference = 67F0A8312BB4413200EE9A48 /* EasySL.app */;
@@ -255,6 +261,7 @@
 			packageReferences = (
 				67F0A85F2BB4415300EE9A48 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
 				67F0A8672BB44F1500EE9A48 /* XCRemoteSwiftPackageReference "OllamaKit" */,
+				67F0A86A2BB48AE500EE9A48 /* XCRemoteSwiftPackageReference "ViewState" */,
 			);
 			productRefGroup = 67F0A8322BB4413200EE9A48 /* Products */;
 			projectDirPath = "";
@@ -300,6 +307,7 @@
 			files = (
 				67F0A8662BB4420F00EE9A48 /* AppState.swift in Sources */,
 				67F0A8372BB4413200EE9A48 /* ContentView.swift in Sources */,
+				67F0A86E2BB4955E00EE9A48 /* MessageViewModel.swift in Sources */,
 				67F0A8352BB4413200EE9A48 /* EasySLApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -639,6 +647,14 @@
 				minimumVersion = 3.0.2;
 			};
 		};
+		67F0A86A2BB48AE500EE9A48 /* XCRemoteSwiftPackageReference "ViewState" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kevinhermawan/ViewState.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -651,6 +667,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 67F0A8672BB44F1500EE9A48 /* XCRemoteSwiftPackageReference "OllamaKit" */;
 			productName = OllamaKit;
+		};
+		67F0A86B2BB48AE500EE9A48 /* ViewState */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67F0A86A2BB48AE500EE9A48 /* XCRemoteSwiftPackageReference "ViewState" */;
+			productName = ViewState;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
