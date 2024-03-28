@@ -5,7 +5,6 @@
 //  Created by Danny on 2024-03-27.
 //
 
-
 import Combine
 import KeyboardShortcuts
 import OllamaKit
@@ -14,17 +13,36 @@ import ViewState
 
 @Observable
 class MessageViewModel {
-    var prompt: String = ""
+    var source: String = ""
     var response: String = ""
     var sendViewState: ViewState?
+    var targetLanguage: Language = .Chinese
+    var sourceLanguage: Language = .English
     
     private var ollama: OllamaKit?
     private var model: String = "llama2-chinese:13b"
     private var url: String = "http://localhost:11434"
     private var generation: AnyCancellable?
+    
+    func switchContent(){
+        let temp = targetLanguage
+        targetLanguage = sourceLanguage
+        sourceLanguage = temp
+        let temp2 = source
+        source = response
+        response = temp2
+    }
+    
+    @MainActor
+    func translate() async {
+        response = ""
+        let system = targetLanguage.system
+        let data = self.convertToOKGenerateRequestData(prompt: source,system: system)
+        await self.send(data: data)
+    }
         
     @MainActor
-    func send(prompt: String) async {
+    func send(data: OKGenerateRequestData) async {
         if ollama == nil {
             let baseURL = URL(string: self.url)!
             self.ollama = OllamaKit(baseURL: baseURL)
@@ -32,7 +50,6 @@ class MessageViewModel {
         if let ollama = self.ollama {
             self.sendViewState = .loading
             if await ollama.reachable() {
-                let data = self.convertToOKGenerateRequestData(prompt: prompt)
                 self.generation = ollama.generate(data: data)
                     .sink(receiveCompletion: { [weak self] completion in
                         switch completion {
@@ -48,8 +65,11 @@ class MessageViewModel {
         }
     }
     
-    private func convertToOKGenerateRequestData(prompt: String?) -> OKGenerateRequestData {
-        let data = OKGenerateRequestData(model: self.model, prompt: prompt ?? "")
+    private func convertToOKGenerateRequestData(prompt: String?, system: String? = nil) -> OKGenerateRequestData {
+        var data = OKGenerateRequestData(model: self.model, prompt: prompt ?? "" )
+        if let system{
+            data.system = system
+        }
 //        data.context = self.context
         return data
     }

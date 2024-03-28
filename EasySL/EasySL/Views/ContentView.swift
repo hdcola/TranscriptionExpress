@@ -5,26 +5,42 @@
 //  Created by Danny on 2024-03-27.
 //
 
-import SwiftUI
 import KeyboardShortcuts
+import SwiftUI
 
 struct ContentView: View {
     @Environment(AppState.self) private var appState
     @Bindable var messageViewModel = MessageViewModel()
-    
+
     var body: some View {
         VStack {
             // input prompt
-            TextEditor(text: $messageViewModel.prompt)
-            
-            TextEditor(text: $messageViewModel.response)
-            
-            Button("Send"){
-                Task {
-                    await messageViewModel.send(prompt: messageViewModel.prompt)
+            TextEditor(text: $messageViewModel.source)
+            HStack{
+                Picker("", selection: $messageViewModel.sourceLanguage) {
+                    ForEach(Language.allCases, id: \.self) { language in
+                        Text(language.rawValue).tag(language)
+                    }
+                }
+                Button("Tranlaste") {
+                    Task {
+                        await messageViewModel.translate()
+                    }
+                }
+                Button{
+                    messageViewModel.switchContent()
+                }label: {
+                    Image(systemName: "arrow.up.arrow.down")
+                }
+                Picker("", selection: $messageViewModel.targetLanguage) {
+                    ForEach(Language.allCases, id: \.self) { language in
+                        Text(language.rawValue).tag(language)
+                    }
                 }
             }
-
+            TextEditor(text: $messageViewModel.response)
+            // select language
+            
             KeyboardShortcuts.Recorder("Toggle Copy", name: .toggleCopy)
         }
         .padding()

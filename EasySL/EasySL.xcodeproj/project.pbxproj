@@ -19,6 +19,7 @@
 		67F0A8692BB44F1500EE9A48 /* OllamaKit in Frameworks */ = {isa = PBXBuildFile; productRef = 67F0A8682BB44F1500EE9A48 /* OllamaKit */; };
 		67F0A86C2BB48AE500EE9A48 /* ViewState in Frameworks */ = {isa = PBXBuildFile; productRef = 67F0A86B2BB48AE500EE9A48 /* ViewState */; };
 		67F0A86E2BB4955E00EE9A48 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0A86D2BB4955E00EE9A48 /* MessageViewModel.swift */; };
+		67F0A8712BB50C1700EE9A48 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0A8702BB50C1700EE9A48 /* Language.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		67F0A8522BB4413200EE9A48 /* EasySLUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySLUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		67F0A8652BB4420F00EE9A48 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		67F0A86D2BB4955E00EE9A48 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
+		67F0A8702BB50C1700EE9A48 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +107,8 @@
 		67F0A8332BB4413200EE9A48 /* EasySL */ = {
 			isa = PBXGroup;
 			children = (
-				67F0A8642BB441F000EE9A48 /* Models */,
+				67F0A86F2BB50BA300EE9A48 /* Models */,
+				67F0A8642BB441F000EE9A48 /* ViewModels */,
 				67F0A8632BB4418B00EE9A48 /* Views */,
 				67F0A8622BB4417B00EE9A48 /* Resources */,
 				67F0A8342BB4413200EE9A48 /* EasySLApp.swift */,
@@ -156,11 +159,19 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		67F0A8642BB441F000EE9A48 /* Models */ = {
+		67F0A8642BB441F000EE9A48 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				67F0A8652BB4420F00EE9A48 /* AppState.swift */,
 				67F0A86D2BB4955E00EE9A48 /* MessageViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		67F0A86F2BB50BA300EE9A48 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				67F0A8702BB50C1700EE9A48 /* Language.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -306,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67F0A8662BB4420F00EE9A48 /* AppState.swift in Sources */,
+				67F0A8712BB50C1700EE9A48 /* Language.swift in Sources */,
 				67F0A8372BB4413200EE9A48 /* ContentView.swift in Sources */,
 				67F0A86E2BB4955E00EE9A48 /* MessageViewModel.swift in Sources */,
 				67F0A8352BB4413200EE9A48 /* EasySLApp.swift in Sources */,
