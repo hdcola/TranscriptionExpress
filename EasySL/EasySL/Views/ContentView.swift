@@ -16,20 +16,26 @@ struct ContentView: View {
         VStack {
             // input prompt
             TextEditor(text: $messageViewModel.source)
-            HStack{
+            HStack {
                 Picker("", selection: $messageViewModel.sourceLanguage) {
                     ForEach(Language.allCases, id: \.self) { language in
                         Text(language.rawValue).tag(language)
                     }
                 }
-                Button("Tranlaste") {
+                Button {
                     Task {
                         await messageViewModel.translate()
                     }
+                } label: {
+                    HStack {
+                        Image(systemName: messageViewModel.sendViewState == .loading ? "slowmo" : "bubble.left.and.text.bubble.right")
+                            .symbolEffect(.variableColor, isActive: messageViewModel.sendViewState == .loading)
+                        Text("Translate")
+                    }
                 }
-                Button{
+                Button {
                     messageViewModel.switchContent()
-                }label: {
+                } label: {
                     Image(systemName: "arrow.up.arrow.down")
                 }
                 Picker("", selection: $messageViewModel.targetLanguage) {
@@ -40,8 +46,10 @@ struct ContentView: View {
             }
             TextEditor(text: $messageViewModel.response)
             // select language
-            
-            KeyboardShortcuts.Recorder("Toggle Copy", name: .toggleCopy)
+
+            HStack {
+                KeyboardShortcuts.Recorder("Toggle Copy", name: .toggleCopy)
+            }
         }
         .padding()
     }

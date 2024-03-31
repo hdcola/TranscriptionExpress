@@ -38,6 +38,7 @@ class MessageViewModel {
         response = ""
         let system = targetLanguage.system
         let data = self.convertToOKGenerateRequestData(prompt: source,system: system)
+        print(data.prompt)
         await self.send(data: data)
     }
         
@@ -66,10 +67,20 @@ class MessageViewModel {
     }
     
     private func convertToOKGenerateRequestData(prompt: String?, system: String? = nil) -> OKGenerateRequestData {
-        var data = OKGenerateRequestData(model: self.model, prompt: prompt ?? "" )
+        var sendPrompt = prompt ?? ""
         if let system{
-            data.system = system
+            sendPrompt = """
+<s>[INST] <<SYS>>
+\(system)
+<</SYS>>
+
+\(sendPrompt) [/INST]
+"""
         }
+        var data = OKGenerateRequestData(model: self.model, prompt: sendPrompt)
+//        if let system{
+//            data.system = system
+//        }
 //        data.context = self.context
         return data
     }
