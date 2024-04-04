@@ -77,7 +77,7 @@ class MessageViewModel {
 \(sendPrompt) [/INST]
 """
         }
-        var data = OKGenerateRequestData(model: self.model, prompt: sendPrompt)
+        let data = OKGenerateRequestData(model: self.model, prompt: sendPrompt)
 //        if let system{
 //            data.system = system
 //        }

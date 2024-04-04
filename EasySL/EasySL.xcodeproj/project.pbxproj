@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		670C1DB42BB994BD000FE4E2 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 670C1DB32BB994BD000FE4E2 /* OpenAI */; };
 		67F0A8352BB4413200EE9A48 /* EasySLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0A8342BB4413200EE9A48 /* EasySLApp.swift */; };
 		67F0A8372BB4413200EE9A48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0A8362BB4413200EE9A48 /* ContentView.swift */; };
 		67F0A8392BB4413200EE9A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67F0A8382BB4413200EE9A48 /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 			files = (
 				67F0A8612BB4415300EE9A48 /* KeyboardShortcuts in Frameworks */,
 				67F0A8692BB44F1500EE9A48 /* OllamaKit in Frameworks */,
+				670C1DB42BB994BD000FE4E2 /* OpenAI in Frameworks */,
 				67F0A86C2BB48AE500EE9A48 /* ViewState in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,6 +198,7 @@
 				67F0A8602BB4415300EE9A48 /* KeyboardShortcuts */,
 				67F0A8682BB44F1500EE9A48 /* OllamaKit */,
 				67F0A86B2BB48AE500EE9A48 /* ViewState */,
+				670C1DB32BB994BD000FE4E2 /* OpenAI */,
 			);
 			productName = EasySL;
 			productReference = 67F0A8312BB4413200EE9A48 /* EasySL.app */;
@@ -273,6 +276,7 @@
 				67F0A85F2BB4415300EE9A48 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
 				67F0A8672BB44F1500EE9A48 /* XCRemoteSwiftPackageReference "OllamaKit" */,
 				67F0A86A2BB48AE500EE9A48 /* XCRemoteSwiftPackageReference "ViewState" */,
+				670C1DB22BB994BD000FE4E2 /* XCRemoteSwiftPackageReference "OpenAI" */,
 			);
 			productRefGroup = 67F0A8322BB4413200EE9A48 /* Products */;
 			projectDirPath = "";
@@ -647,6 +651,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		670C1DB22BB994BD000FE4E2 /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.6;
+			};
+		};
 		67F0A85F2BB4415300EE9A48 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
@@ -674,6 +686,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		670C1DB32BB994BD000FE4E2 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 670C1DB22BB994BD000FE4E2 /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
 		67F0A8602BB4415300EE9A48 /* KeyboardShortcuts */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 67F0A85F2BB4415300EE9A48 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;

@@ -14,9 +14,9 @@ extension Language{
     var system:String{
         switch self {
         case .Chinese:
-            return "我希望你能充当一个中文翻译助手。请将我输入的内容检测语言、翻译为中文回答我。"
+            return "Translate the above sentence to Chinese, and only return the content translated. no explanation."
         case .English:
-            return "I would like you to act as a Engtlish translation assistant. Please answer me by detecting the language and translating what I type into Engtlish."
+            return "Translate the above sentence to English, and only return the content translated. no explanation."
         }
     }
 }
