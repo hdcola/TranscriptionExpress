@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		670C1DB42BB994BD000FE4E2 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 670C1DB32BB994BD000FE4E2 /* OpenAI */; };
+		6789C21A2BBF495D0047957E /* KeyboardShortcutsModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6789C2192BBF495D0047957E /* KeyboardShortcutsModifier.swift */; };
 		67F0A8352BB4413200EE9A48 /* EasySLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0A8342BB4413200EE9A48 /* EasySLApp.swift */; };
 		67F0A8372BB4413200EE9A48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0A8362BB4413200EE9A48 /* ContentView.swift */; };
 		67F0A8392BB4413200EE9A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67F0A8382BB4413200EE9A48 /* Assets.xcassets */; };
@@ -16,7 +17,6 @@
 		67F0A8512BB4413200EE9A48 /* EasySLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0A8502BB4413200EE9A48 /* EasySLUITests.swift */; };
 		67F0A8532BB4413200EE9A48 /* EasySLUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0A8522BB4413200EE9A48 /* EasySLUITestsLaunchTests.swift */; };
 		67F0A8612BB4415300EE9A48 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 67F0A8602BB4415300EE9A48 /* KeyboardShortcuts */; };
-		67F0A8662BB4420F00EE9A48 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0A8652BB4420F00EE9A48 /* AppState.swift */; };
 		67F0A8692BB44F1500EE9A48 /* OllamaKit in Frameworks */ = {isa = PBXBuildFile; productRef = 67F0A8682BB44F1500EE9A48 /* OllamaKit */; };
 		67F0A86C2BB48AE500EE9A48 /* ViewState in Frameworks */ = {isa = PBXBuildFile; productRef = 67F0A86B2BB48AE500EE9A48 /* ViewState */; };
 		67F0A86E2BB4955E00EE9A48 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0A86D2BB4955E00EE9A48 /* MessageViewModel.swift */; };
@@ -41,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6789C2192BBF495D0047957E /* KeyboardShortcutsModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardShortcutsModifier.swift; sourceTree = "<group>"; };
 		67F0A8312BB4413200EE9A48 /* EasySL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasySL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F0A8342BB4413200EE9A48 /* EasySLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySLApp.swift; sourceTree = "<group>"; };
 		67F0A8362BB4413200EE9A48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		67F0A84C2BB4413200EE9A48 /* EasySLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasySLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F0A8502BB4413200EE9A48 /* EasySLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySLUITests.swift; sourceTree = "<group>"; };
 		67F0A8522BB4413200EE9A48 /* EasySLUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySLUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		67F0A8652BB4420F00EE9A48 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		67F0A86D2BB4955E00EE9A48 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
 		67F0A8702BB50C1700EE9A48 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6789C2182BBF48FD0047957E /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				6789C2192BBF495D0047957E /* KeyboardShortcutsModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
 		67F0A8282BB4413100EE9A48 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +117,7 @@
 		67F0A8332BB4413200EE9A48 /* EasySL */ = {
 			isa = PBXGroup;
 			children = (
+				6789C2182BBF48FD0047957E /* Modifier */,
 				67F0A86F2BB50BA300EE9A48 /* Models */,
 				67F0A8642BB441F000EE9A48 /* ViewModels */,
 				67F0A8632BB4418B00EE9A48 /* Views */,
@@ -164,7 +173,6 @@
 		67F0A8642BB441F000EE9A48 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				67F0A8652BB4420F00EE9A48 /* AppState.swift */,
 				67F0A86D2BB4955E00EE9A48 /* MessageViewModel.swift */,
 			);
 			path = ViewModels;
@@ -320,11 +328,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67F0A8662BB4420F00EE9A48 /* AppState.swift in Sources */,
 				67F0A8712BB50C1700EE9A48 /* Language.swift in Sources */,
 				67F0A8372BB4413200EE9A48 /* ContentView.swift in Sources */,
 				67F0A86E2BB4955E00EE9A48 /* MessageViewModel.swift in Sources */,
 				67F0A8352BB4413200EE9A48 /* EasySLApp.swift in Sources */,
+				6789C21A2BBF495D0047957E /* KeyboardShortcutsModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

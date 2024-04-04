@@ -9,7 +9,6 @@ import KeyboardShortcuts
 import SwiftUI
 
 struct ContentView: View {
-    @Environment(AppState.self) private var appState
     @Bindable var messageViewModel = MessageViewModel()
 
     var body: some View {
@@ -52,11 +51,16 @@ struct ContentView: View {
             }
         }
         .padding()
+        .keyboardShortcuts(name: .toggleCopy) { text in
+            Task {
+                messageViewModel.source = text
+                await messageViewModel.translate()
+            }
+        }
     }
 }
 
 #Preview {
     ContentView()
         .frame(minWidth: 400, minHeight: 500)
-        .environment(AppState())
 }
